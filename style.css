@@ -1,0 +1,323 @@
+
+
+
+/* =========================================
+   1. IMPOSTAZIONI GENERALI
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #f5f3f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagina {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+}
+
+.sezione {
+    min-height: 430px;
+    padding: 42px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 7%;
+}
+
+
+/* =========================================
+   2. INTRODUZIONE - UN MONDO IMMENSO
+========================================= */
+
+.hero {
+    min-height: 330px;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+}
+
+.introduzione {
+    padding-top: 0;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 4vw, 60px);
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 32px;
+    position: relative;
+    left: 100px;
+    top: 130px;
+}
+
+.introduzione h2 {
+    font-size: 35px;
+    line-height: 1.25;
+    margin-bottom: 42px;
+    position: relative;
+    left: 100px;
+    top: 150px;
+}
+
+
+
+.introduzione p {
+    font-size: 20px;
+    line-height: 1.3;
+    position: relative;
+    left: 100px;
+    top: 200px;
+}
+
+
+
+.hero img {
+    width: 150%;
+    height: 600px;
+    object-fit: contain;
+    object-position: top center;
+    position: relative;
+    right: 160px;
+}
+
+
+
+.hero .numero {
+    position: absolute;
+    right: 3.5%;
+    bottom: -30px;
+}
+
+
+/* =========================================
+   3. SEZIONE OLFATTO
+========================================= */
+
+
+
+.olfatto img {
+    transform: translateX(-6%);
+    position: relative;
+    width: 300%;
+    right: 90px;
+    top: 50px;
+}
+
+
+
+.olfatto .testo {
+    justify-self: end;
+    position: relative;
+    top: -200px;
+    left: -250px;
+}
+
+
+
+.olfatto h2 {
+    font-size: clamp(32px, 2.5vw, 40px);
+    margin-bottom: 28px;
+    position: relative;
+    left: 100px;
+    top: 130px;
+}
+
+
+
+.olfatto h3 {
+    font-size: 26px;
+    margin-bottom: 32px;
+    position: relative;
+    left: 100px;
+    top: 150px;
+}
+
+
+
+.olfatto p {
+    font-size: 20px;
+    line-height: 1.3;
+    position: relative;
+    left: 100px;
+    top: 200px;
+}
+
+
+/* =========================================
+   4. SEZIONE ASCOLTO
+========================================= */
+
+
+.ascolto .testo {
+    justify-self: start;
+    position: relative;
+    top: -480px;
+    font-size: 10px;
+}
+
+
+
+.ascolto h2 {
+    font-size: clamp(32px, 2.5vw, 40px);
+    margin-bottom: 28px;
+    position: relative;
+    left: 100px;
+    top: 130px;
+}
+
+
+
+.ascolto p {
+    font-size: 20px;
+    line-height: 1.3;
+    position: relative;
+    left: 100px;
+    top: 200px;
+}
+
+
+
+.ascolto img {
+    justify-self: end;
+    width: 86%;
+    height: auto;
+    transform: rotate(-300deg);
+    position: relative;
+    left: -60px;
+    top: -220px;
+}
+
+
+/* =========================================
+   5. SEZIONE BUSSOLA INVISIBILE
+========================================= */
+
+
+
+.bussola .testo {
+    justify-self: start;
+    position: relative;
+    top: -50px;
+}
+
+
+
+.bussola h2 {
+    font-size: clamp(32px, 2.5vw, 40px);
+    margin-bottom: 28px;
+    position: relative;
+    left: 100px;
+    top: -130px;
+}
+
+
+
+.bussola p {
+    font-size: 20px;
+    line-height: 1.3;
+    position: relative;
+    left: 100px;
+    top: -0px;
+}
+
+
+
+.bussola img {
+    width: 250%;
+    max-width: none;
+    height: auto;
+    justify-self: end;
+    position: relative;
+    right: 40px;
+    left: 80px;
+    top: -10px;
+}
+
+
+/* =========================================
+   6. NUMERAZIONE DELLE SLIDE
+========================================= */
+
+.numero {
+    position: absolute;
+    right: 3.5%;
+    bottom: 160px;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 5;
+    top: 600px
+}
+
+
+/* =========================================
+   7. SEZIONE FINALE
+========================================= */
+
+.finale {
+    min-height: 470px;
+    padding: 28px 7% 50px;
+    display: grid;
+    align-items: start;
+    isolation: isolate;
+}
+
+
+
+.finale > img {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    position: relative;
+    z-index: 0;
+}
+
+
+
+.testo-finale {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    
+}
+
+
+
+.testo-finale h2 {
+    font-size: clamp(32px, 2.5vw, 40px);
+    position: relative;
+    left: 0;
+    top: -1200px;
+    margin-bottom: 28px;
+}
+
+
+
+.testo-finale p {
+    font-size: 17px;
+    text-align: left;
+    line-height: 1.3;
+    position: relative;
+    left: 0;
+    top: -1090px;
+}
+
+
